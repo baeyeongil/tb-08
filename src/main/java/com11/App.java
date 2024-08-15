@@ -6,7 +6,7 @@ class App {
     void run() {
         System.out.println("== 명언 앱 ==");
 
-        int i = 0;
+        int lastQuotationid = 0;
 
         while(true){
             System.out.println("명령 ) ");
@@ -23,8 +23,8 @@ class App {
                 System.out.print("작가 : ");
                 String authorName = scanner.nextLine();
 
-                System.out.printf("명언 : %s, 작가 : %s\n",contemt,authorName);
-                System.out.println("1번 명언이 등록됬습니다.");
+                lastQuotationid++;
+                System.out.printf("%d번 명언이 등록되었습니다.", lastQuotationid);
             }
         }
     }
