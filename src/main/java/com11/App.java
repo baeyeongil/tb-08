@@ -5,6 +5,9 @@ import java.util.Scanner;
 class App {
     void run() {
         System.out.println("== 명언 앱 ==");
+
+        int i = 0;
+
         while(true){
             System.out.println("명령 ) ");
 
@@ -21,6 +24,7 @@ class App {
                 String authorName = scanner.nextLine();
 
                 System.out.printf("명언 : %s, 작가 : %s\n",contemt,authorName);
+                System.out.println("1번 명언이 등록됬습니다.");
             }
         }
     }
